@@ -1,0 +1,45 @@
+{
+	"files.exclude": {
+		"src/**/*.css": {
+			"when": "$(basename).scss"
+		},
+		"src/**/*.js": {
+			"when": "$(basename).ts"
+		},
+		"src/**/*.jsx": {
+			"when": "$(basename).tsx"
+		}
+	},
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"[javascript]": {
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.formatOnSave": true
+	},
+	"[json]": {
+		"editor.formatOnSave": true
+	},
+	"[markdown]": {
+		"editor.formatOnSave": true
+	},
+	"eslint.packageManager": "npm",
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"eslint.enable": true,
+	"prettier.tabWidth": 2,
+	"prettier.printWidth": 120,
+	"scss.lint.unknownProperties": "ignore",
+	"typescript.tsdk": "node_modules\\typescript\\lib",
+}
