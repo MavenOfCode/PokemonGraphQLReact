@@ -11,12 +11,10 @@ function App() {
     loading,
     error
   } = useInfo();
-
-  if (loading) return <p> Loading... </p>;
-  if (error || undefined) return <p> Error: {error && <p>{error}</p>}</p>;
-  if (data) {
     return ( 
       <>
+      {loading && <p> Loading... </p> }
+      {error && <p> Error: {error && <p>{error}</p>}</p>}
       <React.Fragment>
         <h1 > Pokémons </h1>
         <p>
@@ -27,15 +25,13 @@ function App() {
         starting with Bulbasaur in the top left corner and ending with Mewtwo in
         the bottom right corner. 
         </p> 
-        <Characters data = {
-          data
+        { data ?  
+        (<Characters data = {data}/>) :
+        (<p>data missing</p>)
         }
-        />
-     
       </React.Fragment>
       </>
   );
-}
 }
 
 export default App;

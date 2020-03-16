@@ -1,0 +1,26 @@
+body {
+	margin: 3em;
+	font-family: 'kalam';
+	font-size: large;
+	padding: 2em;
+	/* background: black;
+	color: white; */
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	grid-template-rows: repeat(auto-fill);
+	margin: 3em;
+	padding: 1em;
+}
+
+/* .container>.card-body {
+	padding: 2em;
+	border: white;
+	border: 2em;
+} */
+
+.container>.card img {
+	max-width: 100%;
+}
