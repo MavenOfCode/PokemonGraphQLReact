@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+And based on the tutorial from Sitepoint:
+[How to Build a Web App with GraphQL and React](https://www.sitepoint.com/how-to-build-a-web-app-with-graphql-and-react/)
+
+Updated to include Typescript
+
+With help from [Ed Silva](https://github.com/eedsilva) to learn more about React refactoring
+
 ## Available Scripts
 
 In the project directory, you can run:

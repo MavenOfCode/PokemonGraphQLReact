@@ -5,17 +5,13 @@ import {useInfo} from './hooks/useInfo'
 import './App.css';
 import Characters from './components/Characters'
 
-function App() {
-  const {
-    data,
-    loading,
-    error
-  } = useInfo();
+export default function App() {
+  const {data, loading, error} = useInfo();
+
     return ( 
       <>
       {loading && <p> Loading... </p> }
       {error && <p> Error: {error && <p>{error}</p>}</p>}
-      <React.Fragment>
         <h1 > Pokémons </h1>
         <p>
         <a href = "https://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon" >
@@ -29,9 +25,6 @@ function App() {
         (<Characters data = {data}/>) :
         (<p>data missing</p>)
         }
-      </React.Fragment>
       </>
   );
 }
-
-export default App;

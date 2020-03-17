@@ -1,16 +1,6 @@
-import {
-	useQuery
-} from '@apollo/react-hooks';
+import {useQuery} from '@apollo/react-hooks';
 import { QueryResult } from "@apollo/react-common";
 import gql from "graphql-tag";
-
-
-
-// type QueryResult ={
-//   data?: Data;
-//   error?: ApolloError;
-//   loading?: boolean;
-// }
 
 const GET_POKEMON_INFO = gql `
 {
@@ -40,7 +30,7 @@ export type Pokemon ={
   evolutions: Evolution[];
 }
 
-type Evolution = {
+export type Evolution = {
   name: string;
 }
 

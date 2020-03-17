@@ -15,12 +15,11 @@ body {
 	padding: 1em;
 }
 
-/* .container>.card-body {
+.card-body {
 	padding: 2em;
-	border: white;
-	border: 2em;
-} */
+}
 
 .container>.card img {
-	max-width: 100%;
+	max-width: 95%;
+	padding: 1em;
 }
