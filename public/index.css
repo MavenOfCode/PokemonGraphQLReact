@@ -1,10 +1,10 @@
-body {
+body, header {
 	margin: 3em;
 	font-family: 'kalam';
 	font-size: large;
 	padding: 2em;
-	/* background: black;
-	color: white; */
+	background: grey;
+	color: floralwhite;
 }
 
 .container {
